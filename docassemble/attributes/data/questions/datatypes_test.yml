@@ -15,6 +15,7 @@ objects:
   - lunch: DADTTime
   - end_of_the_world: DADTDateTime
   - possibly: DADTYesNoMaybe
+  - a_file: DADTFile
 ---
 mandatory: True
 question: Summary
@@ -39,3 +40,5 @@ subquestion: |
   The end of the world is scheduled for ${ end_of_the_world }.
   
   This is true ${ possibly } true.
+  
+  The file is ${ a_file }
