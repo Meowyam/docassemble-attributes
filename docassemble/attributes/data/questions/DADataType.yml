@@ -52,3 +52,11 @@ fields:
   - ${ x.object_name() } : x.value
     datatype: file
 ---
+generic object: DAList
+question: Are there any ${ x.object_name() }
+yesno: x.there_are_any 
+---
+generic object: DAList
+question: Is there another of ${ x.object_name() }
+yesno: x.there_is_another
+---
