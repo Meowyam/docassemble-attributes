@@ -60,3 +60,16 @@ generic object: DAList
 question: Is there another of ${ x.object_name() }
 yesno: x.there_is_another
 ---
+generic object: DADTEnum
+question: What is your choice ${ x.object_name() }
+fields:
+  - ${ x.object_name() }: x.value
+    datatype: radio
+    code: |
+      myoptions
+---
+code: |
+  myoptions = [
+                {'option1': "First Option"},
+                {'option2': "Second Option"},
+              ]
